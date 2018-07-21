@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#465376"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.respireplus.respire.MainActivity">
+
+
+            <ImageView
+                android:id="@+id/ImageView"
+                android:src="@drawable/image2"
+                android:layout_margin="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <Button
+                android:id="@+id/Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="L o g i n"
+                android:textSize="20dp"
+                android:background="@color/colorPrimary"
+                android:layout_margin="30dp"
+                android:layout_marginRight="30dp"/>
+            <Button
+                android:id="@+id/SignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="S i g n U p"
+                android:textSize="20dp"
+                android:background="@color/colorPrimary"
+                android:elegantTextHeight="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+</LinearLayout>

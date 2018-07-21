@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#465376"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Additional Details"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:textColor="@android:color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/etDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:inputType="date"
+            android:hint="In Years"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_weight="1"
+                android:textSize="17dp"/>
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_weight="1"
+                android:textSize="17dp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chest Pain"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/etChestPain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:hint="1/2/3/4"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RBP"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/etRBP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:hint="in mm Hg"
+            android:layout_marginRight="20dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cholesterol"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/etCholesterol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:hint="in mg/dL"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FBS"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/etFBS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:hint="0/1"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RestECG"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/etRestECG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:hint="0/1/2"
+            android:layout_marginRight="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thalach"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/etThalach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="In bpm"
+            android:inputType="numberDecimal"
+            android:textSize="17dp" />
+        <ImageButton
+            android:id="@+id/ibGetECG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_favorite_border_black_24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exang"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/etExang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:hint="0/1"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Old_Peak"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/etOld_Peak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:hint="In digit"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Slope"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/etSlope"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:hint="1/2/3"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CA"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp" />
+
+        <Spinner
+            android:id="@+id/spEIA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/eia_data"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thal"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/etThal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:hint="In digit"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:textSize="17dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="90dp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:textSize="12dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="@string/AddDetailsInfo"
+            android:textColor="@android:color/black"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>
